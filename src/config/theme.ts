@@ -1,6 +1,7 @@
 type Color = typeof colors[keyof typeof colors];
 type Layout = {
   backgroundColor: Color;
+  accentColor: Color;
 };
 type FontFamily = {
   regular: string;
@@ -52,6 +53,7 @@ const colors = {
 
 const layout: Layout = {
   backgroundColor: colors.primary,
+  accentColor: colors.white,
 };
 
 const font: Font = {

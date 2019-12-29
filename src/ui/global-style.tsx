@@ -4,6 +4,7 @@ import theme from '../config/theme';
 export default createGlobalStyle`
   div#root, html, body {
     margin: 0;
+    box-sizing: border-box;
     height: 100%;
     width: 100%;
     background-color: ${theme.layout.backgroundColor};

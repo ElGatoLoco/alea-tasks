@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const textStyle = css`
+  box-sizing: border-box;
   font-family: ${({ theme }) => theme.font.family.regular};
   color: ${({ theme }) => theme.font.color.light};
 `;
