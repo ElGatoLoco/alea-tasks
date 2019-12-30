@@ -33,6 +33,11 @@ const Navbar: React.FC<RouteComponentProps> = ({ children, location }) => (
             Modal
           </NavLink>
         </Item>
+        <Item>
+          <NavLink location={location} href={routes.form}>
+            Form
+          </NavLink>
+        </Item>
       </List>
     </Nav>
     {children || null}
