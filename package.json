@@ -5,9 +5,25 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "tslint -c tslint.json --project .",
     "lint:fix": "tslint -c tslint.json --project . --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn pretty-quick --staged && yarn tsc",
+      "pre-push": "yarn lint && yarn test:coverage --watchAll=false"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!<rootDir>/node_modules/",
+      "src/**/*.ts",
+      "!src/**/{global-types,index,serviceWorker,types,*.d}.ts",
+      "!src/config/*.ts",
+      "!src/ui/*.ts"
+    ]
   },
   "dependencies": {
     "fontfaceobserver": "^2.1.0",
@@ -16,13 +32,11 @@
     "react-scripts": "3.3.0",
     "styled-components": "^4.4.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn pretty-quick --staged && yarn tsc"
-    }
-  },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
     "@types/fontfaceobserver": "^0.0.6",
+    "@types/jest": "^24.0.25",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
