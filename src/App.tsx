@@ -7,8 +7,8 @@ import theme from './config/theme';
 import Navbar from './features/navigation/Navbar';
 import routes from './features/navigation/routes';
 import DragAndDrop from './pages/DragAndDrop';
-import Modal from './pages/Modal';
 import Form from './pages/Form';
+import Modal from './pages/Modal';
 import GlobalStyle from './ui/global-style';
 
 const Route: React.FC<{ component: React.FC } & RouteComponentProps> = ({ component: Component, ...rest }) => (

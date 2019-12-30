@@ -15,7 +15,7 @@
       }
     },
     "no-any": {
-      "severity": "error"
+      "severity": "warning"
     },
     "no-console": {
       "severity": "warning"

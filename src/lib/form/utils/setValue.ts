@@ -3,7 +3,7 @@ import { FieldValue, FormData } from '../types';
 export const setValue = (nestedPath: string | string[], value: FieldValue, object: FormData): FormData => {
   const obj = JSON.parse(JSON.stringify(object));
 
-  let path = Array.isArray(nestedPath) ? nestedPath : nestedPath.split('.');
+  const path = Array.isArray(nestedPath) ? nestedPath : nestedPath.split('.');
   path
     .slice(0, -1)
     .reduce(

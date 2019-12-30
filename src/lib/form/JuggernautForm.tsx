@@ -1,8 +1,8 @@
 import React, { ChangeEvent, ComponentProps, createContext, FC, FormEvent, useState } from 'react';
 
-import { getValue, setValue } from './utils';
-import { ChangeHandler, FieldValue, FormData } from './types';
 import { JuggernautFormStyled } from './styles';
+import { ChangeHandler, FieldValue, FormData } from './types';
+import { getValue, setValue } from './utils';
 
 type JuggernautForm = {
   handleFieldChange: (fieldName: string) => ChangeHandler;

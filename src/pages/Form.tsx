@@ -19,9 +19,9 @@ const Form: React.FC = () => {
   return (
     <JuggernautFormWrapper>
       <JuggernautForm initialValues={userInfo} onSubmit={onSubmit}>
-        <JuggernautFormField type="email" required name="email" placeholder="your@email.com" />
+        <JuggernautFormField type="email" required={true} name="email" placeholder="your@email.com" />
         <JuggernautFormField type="number" name="age" />
-        <JuggernautFormField type="text" required name="name" />
+        <JuggernautFormField type="text" required={true} name="name" />
         <JuggernautFormField type="text" name="phone.ext" />
         <JuggernautFormField type="text" name="phone.number" />
         <JuggernautFormField type="submit" value="Submit" />

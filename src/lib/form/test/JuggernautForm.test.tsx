@@ -1,7 +1,7 @@
 import React from 'react';
 import { JuggernautForm, JuggernautFormField } from '..';
 
-import { render, screen, fireEvent } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 test('Should render children', () => {
   render(

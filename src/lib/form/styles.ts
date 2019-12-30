@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const JuggernautFormWrapper = styled.div`
   text-align: center;
-  height: 100vh;
   width: 100vw;
   display: grid;
   align-content: center;
