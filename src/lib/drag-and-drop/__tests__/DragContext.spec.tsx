@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
-import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
+import { render } from '@testing-library/react';
+import React, { useContext } from 'react';
 
 import DragContext from '../DragContext';
 import { ExtendedDragEvent } from '../global-types';

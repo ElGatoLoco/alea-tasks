@@ -3,9 +3,9 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
+import theme from '../../../config/theme';
 import DragArea from '../DragArea/DragArea';
 import DragItem from '../DragItem/DragItem';
-import theme from '../../../config/theme';
 
 type User = {
   id: number;
@@ -37,7 +37,7 @@ const getRenderedList = () =>
 describe('Render test suite', () => {
   getRenderedList();
 
-  test('it should render users to the screen', function() {
+  test('it should render users to the screen', () => {
     expect(screen.getByText('milica@hotmail.com')).toBeInTheDocument();
     expect(screen.getByText('Jovana')).toBeInTheDocument();
     expect(screen.getByText('zoran@gmail.com')).toBeInTheDocument();

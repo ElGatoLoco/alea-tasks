@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import { highlightItemIfDraggedOver, reorderItems } from './handlers';
-import { DragArea as DragAreaT, SortableItem } from './types';
+import Box from '../../../ui/Box';
 import DragContext from '../DragContext';
 import { ExtendedDragEvent } from '../global-types';
-import Box from '../../../ui/Box';
+import { highlightItemIfDraggedOver, reorderItems } from './handlers';
+import { DragArea as DragAreaT, SortableItem } from './types';
 
 const DragArea: DragAreaT = ({ items, onChange, children }) => {
   const [onIndex, setOnIndex] = useState(-1);

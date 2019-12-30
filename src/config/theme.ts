@@ -3,6 +3,10 @@ type Layout = {
   backgroundColor: Color;
   accentColor: Color;
 };
+type Navbar = {
+  backgroundColor: Color;
+  color: Color;
+};
 type FontFamily = {
   regular: string;
 };
@@ -23,6 +27,7 @@ type FontColor = {
   red: Color;
   grey: Color;
   primary: Color;
+  darkBlue: Color;
 };
 type Font = {
   family: FontFamily;
@@ -56,6 +61,11 @@ const layout: Layout = {
   accentColor: colors.white,
 };
 
+const navbar: Navbar = {
+  backgroundColor: colors.white,
+  color: colors.darkBlue,
+};
+
 const font: Font = {
   family: {
     regular: 'Lato, sans-serif',
@@ -77,10 +87,12 @@ const font: Font = {
     red: colors.red,
     grey: colors.greyBlue,
     primary: colors.primary,
+    darkBlue: colors.darkBlue,
   },
 };
 
 export default {
   layout,
   font,
+  navbar,
 };

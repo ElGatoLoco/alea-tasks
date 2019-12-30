@@ -1,8 +1,8 @@
 import React, { ReactNode, useContext } from 'react';
 
-import DefaultContainer from './DefaultDragContainer';
 import DragContext from '../DragContext';
 import { DragItemContainer } from '../global-types';
+import DefaultContainer from './DefaultDragContainer';
 
 type DragItem = React.FC<{
   index: number;
